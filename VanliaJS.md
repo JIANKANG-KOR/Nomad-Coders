@@ -64,24 +64,6 @@
 (* 변수를 선언할 때 기본으로 const를 쓰고 필요할 때까지 let 쓰지 말 것. 진짜 필요할 때만 let 쓰기)
  - var : 동일한 이름으로 변수 선언이 가능하여, 이전에 선언한 변수임을 잊어버리고 같은 이름으로 선언할 위험이 있다. 
  (안전장치가 없어 권장X) 에러가 뜨지 않는다.
-
- - let : var와 유사하지만, 중복된 변수 선언을 막아준다. (권장)
- ```js
-let a = 221;
-let b = a - 5;
-a = 4
-console.log(b,a);
-```
-> 결과값: 216 4
-
-```js
-let a = 221;
-let b = a - 5;
-let a = 4
-console.log(b,a);
-```
-> 결과값: SyntaxError: Identifier 'a' has already been declared
-    at /data/web_hosting_1/five-nine/HotpinkEnviousFlatassembler/index.js:3:5
  
  - const: let과 유사하지만 변수를 절대 바꾸지 않을 경우 사용. 
  
@@ -102,6 +84,24 @@ console.log(b,a);
 ```
 > 결과값: SyntaxError: Identifier 'a' has already been declared
     at /data/web_hosting_1/five-nine/HotpinkEnviousFlatassembler/index.js:3:7
+    
+- let : var와 유사하지만, 중복된 변수 선언을 막아준다. (권장)
+ ```js
+let a = 221;
+let b = a - 5;
+a = 4
+console.log(b,a);
+```
+> 결과값: 216 4
+
+```js
+let a = 221;
+let b = a - 5;
+let a = 4
+console.log(b,a);
+```
+> 결과값: SyntaxError: Identifier 'a' has already been declared
+    at /data/web_hosting_1/five-nine/HotpinkEnviousFlatassembler/index.js:3:5
 
 ## Data types on JS
 
