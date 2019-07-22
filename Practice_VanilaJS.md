@@ -23,17 +23,70 @@ youare("Jian",29,"pretty");
 
 
 ## 2.2 More Function Fun
+이름과 나이를 넣어 "Hello 이름 you are 나이 years old" 출력 하기.
+
 ```js
 function sayHello(name,age){
-  return ( `Hello ${name} you are ${age} years old. `);
+  return ( `Hello ${name}. you are ${age} years old. `);
   }
 
 const greetJian = sayHello("Jian",29)
 
 console.log(greetJian)
 
-//결과값
->Hello Jian you are 29 years old. 
+//console 출력값
+>Hello Jian. you are 29 years old. 
 ```
 
+계산기 만들기
+```js
+//calculator 
 
+const calculator = {
+  plus : function (a, b){
+    return a + b;
+  },
+  minus : function(a, b){
+    return a - b;
+  },
+  devide : function(a, b){
+    return a / b;
+  },
+  multiple : function(a, b){
+    return a * b;
+  },
+  power : function(a, b){
+    return a ** b;
+  }
+}
+
+let a = 5;
+let b = 5;
+
+const plus = calculator.plus(a,b);
+console.log(plus);
+
+const minus = calculator.minus(a,b);
+console.log(minus);
+
+const devide = calculator.devide(a,b);
+console.log(devide);
+
+const multiple = calculator.multiple(a,b);
+console.log(multiple);
+
+const power = calculator.power(a,b);
+console.log(power);
+
+const result = 
+ console.log(`when a=5, b=5 => plus(+):${plus}, minus(-):${minus}, devide(/):${devide}, multiple(*):${multiple}, power(**):${power} `)
+ 
+//console 출력값
+10
+0
+1
+25
+3125
+when a=5, b=5 => plus(+):10, minus(-):0, devide(/):1, multiple(*):25, power(**):3125 
+   
+ ```
