@@ -162,33 +162,36 @@ console.log 내의 Array []안에 숫자를 써주면 해당하는 순서의 값
  - **Object는 각 데이터에 label이 가능해
 
 ```js
-const nicoInfo = {
-  name:"nice",
-  age:33,
-  gender:"Male",
-  isHandsome:true,
-  favMovies: ["Along the gods","LORT","Oldboy"],
-  favFood: [ 
-  //***Array 안에 object 넣을 수 있어//
+const jianInfo = {
+  name: "Jian",
+  age: 29,
+  gender: "Female",
+  isPretty: true,
+  favMovies: [
+    { title: "Pasasite", janre: "Mysterious", actor: "Song Kang HO" },
+    { title: "Mr.nobody", janre: "Drama", actor: "IDK" },
+    { title: "Weplash", janre: "Thriller", actor: "IDK" },
+    { title: "District9", janre: "Fantasy", actor: "IDK" },
+  ],
+  favFood: [
+    //***Array 안에 object 넣을 수 있어//
     {
-      name:"Kimchi",fatty:false,
-      },
-      {
-        name:"Cheeseburger", fatty:true
-        }
-        ]
+      name: "Kimchi", fatty: false,
+    },
+    {
+      name: "Cheeseburger", fatty: true
+    }
+  ]
 }
 
-console.log(nicoInfo.gender);
+console.log(jianInfo.gender);
 
 //favFood array 안에 있는 object의 name찾기 
-console.log(nicoInfo.favFood[0].name)
+console.log(jianInfo.favFood[0].name)
+console.log(jianInfo.favMovies[0].actor);
 
 //추후 label 값 재지정할 수 있어 (const로 변수 지정해도 수정가능)//
-nicoInfo.favFood[0].name = "Salad"
-
-
-
+jianInfo.favFood[0].name = "Salad"
 
 ```
 - [그래머 기억할 것들] : <br>',' 콤마 빼먹지 말 것, " " 쿼테이션 까먹지 말고 닫아
