@@ -82,7 +82,7 @@ const result =
  console.log(`when a=5, b=5 => plus(+):${plus}, minus(-):${minus}, devide(/):${devide}, multiple(*):${multiple}, power(**):${power} `)
  
 //console 출력값
-10
+>10
 0
 1
 25
