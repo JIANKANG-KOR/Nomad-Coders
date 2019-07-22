@@ -147,9 +147,48 @@ console.log(daysOfWeek[2],something);
 
 >결과값: Wed Something
 
+//추후 label 값 재지정할 수 있어 (const로 변수 지정해도 수정가능)//
+const daysOfWeek[0] = "Unknown"
+
+
 /*[] 안에 텍스트, true/false, numbers, floats 사용가능
 console.log 내의 Array []안에 숫자를 써주면 해당하는 순서의 값을 출력.
 컴퓨터는 숫자를 0부터 세는 점에 주의*/
 ```
 
- 2. Object: 
+ 2. Object: Object는 value에 이름을 줄 수 있다. (리스트를 만들땐 Array를 사용)
+하지만 예를들어, Array로 내 개인정보를 저장하려면 (이름, 나이, 성별 등)
+내가 원하는 방식으로 정보가 저장되지 않아
+ - **Object는 각 데이터에 label이 가능해
+
+```js
+const nicoInfo = {
+  name:"nice",
+  age:33,
+  gender:"Male",
+  isHandsome:true,
+  favMovies: ["Along the gods","LORT","Oldboy"],
+  favFood: [ 
+  //***Array 안에 object 넣을 수 있어//
+    {
+      name:"Kimchi",fatty:false,
+      },
+      {
+        name:"Cheeseburger", fatty:true
+        }
+        ]
+}
+
+console.log(nicoInfo.gender);
+
+//favFood array 안에 있는 object의 name찾기 
+console.log(nicoInfo.favFood[0].name)
+
+//추후 label 값 재지정할 수 있어 (const로 변수 지정해도 수정가능)//
+nicoInfo.favFood[0].name = "Salad"
+
+
+
+
+```
+- [그래머 기억할 것들] : <br>',' 콤마 빼먹지 말 것, " " 쿼테이션 까먹지 말고 닫아
