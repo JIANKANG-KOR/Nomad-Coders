@@ -18,6 +18,8 @@ youare("Jian",29,"pretty");
 //결과값//
 >You're  Jian who is 29 years old. you're pretty
 ```
-()안에 있는 argument가 외부에 있는 value를 받아dhk
-(*argument는 variable(변수) 같은 것임.)
+()안에 있는 argument가 외부에 있는 value를 받아와 담아둔다. (*argument는 variable(변수) 같은 것임) <br>
+이후 value를 불러오면 담아둔 순서대로 출력된다.
 
+
+## 2.2 More Function Fun
