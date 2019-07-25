@@ -90,3 +90,9 @@ const result =
 when a=5, b=5 => plus(+):10, minus(-):0, devide(/):1, multiple(*):25, power(**):3125 
    
  ```
+## 2.6 DOM - If else - Function practice
+* 색상 바로 복사하는 사이트 https://flatuicolors.com/
+* 이벤트 찾을 땐 항상 MDN에서 찾아볼 것. (click, mouseenter...) <br>
+ https://developer.mozilla.org/en-US/docs/Web/Events#Most_common_categories
+ 
+    
