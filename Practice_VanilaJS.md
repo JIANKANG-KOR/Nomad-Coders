@@ -123,4 +123,21 @@ function clickHandle() {
 clickHandle();
 ```
 
-## 2.7 
+```js
+const title = document.querySelector("#title");
+
+const CLICKED_CLASS = "clicked";
+
+function handleClick() {
+    title.classList.toggle(CLICKED_CLASS);
+}
+
+function init() {
+    title.addEventListener("click", handleClick);
+};
+
+init();
+
+//className은 그저 class name을 재정의하는 것 밖에 못하지만
+//classList는 class를 'add,' 'remove, 'toggle'의 메소드를 갖는다.
+```
