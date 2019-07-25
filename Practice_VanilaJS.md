@@ -90,9 +90,37 @@ const result =
 when a=5, b=5 => plus(+):10, minus(-):0, devide(/):1, multiple(*):25, power(**):3125 
    
  ```
-## 2.6 DOM - If else - Function practice
+## 2.6 - 2.7 DOM - If else - Function practice
 * 색상 바로 복사하는 사이트 https://flatuicolors.com/
 * 이벤트 찾을 땐 항상 MDN에서 찾아볼 것. (click, mouseenter...) <br>
  https://developer.mozilla.org/en-US/docs/Web/Events#Most_common_categories
  
-    
+title을 클릭했을 때 color가 'rgb(186, 220, 88)'이면 #686de0로 변경하고, #686de0이면 rgb(186, 220, 88)로 변경하기
+```js
+const title = document.querySelector("#title");
+
+const BASE_COLOR = "rgb(186, 220, 88)";
+const OTHER_COLOR = "#686de0";
+
+
+function colorCheck() {
+    const currentColor = title.style.color;
+    if (currentColor === BASE_COLOR) {
+    /*★아래의 title.style.color를 currentColor로 바꾼다면 작동하지 않음.
+    currentColor는 그저 주소를 가리키는 변수일 뿐이기 때문임. (말하자면 링크같은것..?)
+    */
+        title.style.color = OTHER_COLOR;
+    } else {
+        title.style.color = BASE_COLOR;
+    }
+}
+
+function clickHandle() {
+    title.style.color = BASE_COLOR;
+    title.addEventListener("click", colorCheck);
+}
+
+clickHandle();
+```
+
+## 2.7 
