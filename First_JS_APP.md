@@ -95,6 +95,7 @@ body{
   display:block;
 }
 ```
+
 ```html
 <!DOCTYPE html>
 <html>
