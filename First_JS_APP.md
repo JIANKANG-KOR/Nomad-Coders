@@ -76,7 +76,7 @@ function init() {
 init();
 ```
 
-``css
+```css
 body{
     background: #ecf0f1;
   }
