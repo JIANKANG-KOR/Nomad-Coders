@@ -27,7 +27,7 @@ youare("Jian",29,"pretty");
 
 ```js
 function sayHello(name,age){
-  return ( `Hello ${name}. you are ${age} years old. `);
+  return ( `Hello ${name}. you are ${age} years old. `); //이 때 '와 ` 헷갈리지 말 것.
   }
 
 const greetJian = sayHello("Jian",29)
