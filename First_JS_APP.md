@@ -31,12 +31,12 @@ init(); //init 함수 실행
 ## 3.3-3.4 Saving the User Name
 
 ```js
-const form = document.querySelector(".js-form"),
-    input = form.querySelector("input"),
-    greeting = document.querySelector(".js-greetings");
+const form = document.querySelector(".js-form"), //form 태그 변수만들기
+    input = form.querySelector("input"), //input 태그 변수 만들기
+    greeting = document.querySelector(".js-greetings"); //이름 저장하고 띄울 greeting 변수 만들기
 
-const USER_LS = "currentUser",
-    SHOWING_CN = "showing"
+const USER_LS = "currentUser", // Username받을 변수 만들기
+    SHOWING_CN = "showing" // showing class명으로 변수 만들기
 
 function saveName(text) {
     localStorage.setItem(USER_LS, text);
